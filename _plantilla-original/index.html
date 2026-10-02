@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombre del Negocio — Proveedor Estratégico</title>
+  <meta name="description" content="Empresa de ejemplo con más de 15 años en el sector. Soluciones integrales de calidad.">
+  <meta name="keywords" content="plantilla, suministros, proveedor, ejemplo">
+  <meta property="og:title" content="Nombre del Negocio — Proveedor Estratégico">
+  <meta property="og:description" content="Suministro centralizado de materiales para proyectos públicos y privados.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <img src="logo.png" alt="Mi Negocio" class="ld-logo-img">
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Cargando</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="Mi Negocio">
+      <img src="logo.png" alt="Mi Negocio" class="nav-logo-img">
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Empresa</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#products">Productos</a></li>
+      <li><a href="#why">Por qué Elegirnos</a></li>
+      <li><a href="#contact" class="nav-cta">Cotizar Ahora</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Empresa</a>
+  <a href="#services">Servicios</a>
+  <a href="#products">Productos</a>
+  <a href="#why">Por qué Elegirnos</a>
+  <a href="#contact">Cotizar Ahora</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">Empresa Ejemplo · Establecida desde XXXX</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Tu Proveedor</span></span>
+        <span class="h1-line"><span class="h1-inner">Estratégico de</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner"><span class="accent-cycle" id="accentCycle">Soluciones</span></span></span>
+      </h1>
+      <p class="hero-p">
+        Lorem ipsum dolor sit amet, suministro centralizado de materiales y servicios para proyectos públicos y privados en todo el país.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">
+          Solicitar Cotización
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#products" class="btn-secondary">Ver Catálogo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cifras clave">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="15" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Años de experiencia</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="50" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Productos disponibles</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="100" data-prefix="" data-suffix="%">0%</span>
+          <span class="stat-lbl">Proyectos certificados</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="10" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Marcas aliadas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-beam"></div>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
+      <rect x="1" y="1" width="20" height="32" rx="10" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+      <circle class="mouse-dot" cx="11" cy="9" r="3" fill="rgba(255,255,255,.55)"/>
+    </svg>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Empresa certificada</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Certificaciones">
+  <div class="wrap">
+    <div class="trust-row">
+      <p class="trust-label">Certificados ante</p>
+      <div class="trust-chips">
+        <span class="trust-chip">ORG. A</span>
+        <span class="trust-chip">ORG. B</span>
+        <span class="trust-chip">ORG. C</span>
+        <span class="trust-chip">ORG. D</span>
+        <span class="trust-chip">ORG. E</span>
+        <span class="trust-chip">ORG. F</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+            alt="Obra de infraestructura" loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">XXXX</p>
+          <p class="a-lbl">Año de fundación</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading">Soluciones Integrales para Cada Proyecto</h2>
+        <p>Lorem ipsum dolor sit amet, empresa especializada en el suministro y distribución de materiales para infraestructura, construcción y acabados, con más de 15 años atendiendo a los sectores público y privado.</p>
+        <p>Lorem ipsum nuestra fortaleza reside en centralizar múltiples categorías de producto bajo un solo proveedor confiable, simplificando los procesos de adquisición y garantizando calidad certificada en cada entrega.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="15" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Años en el mercado</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="50" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Productos disponibles</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="100" data-prefix="" data-suffix="%"></p>
+            <p class="a-stat-l">Proyectos entregados</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="10" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Marcas aliadas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading">Servicios Especializados</h2>
+      <p class="sub">Soluciones completas para que su proyecto cuente con los materiales correctos, en tiempo y con respaldo técnico.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <h3>Servicio Principal</h3>
+        <p>Lorem ipsum catálogo completo de materiales. Un solo punto de contacto con precios competitivos y disponibilidad inmediata.</p>
+        <div class="svc-tags">
+          <span class="tag tag-b">Ítem A</span>
+          <span class="tag tag-b">Ítem B</span>
+          <span class="tag tag-b">Ítem C</span>
+          <span class="tag tag-b">Ítem D</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A47" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="3" width="15" height="13" rx="1"/>
+            <path d="M16 8h4l3 5v3h-7V8z"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <h3>Logística y Distribución</h3>
+        <p>Lorem ipsum red de distribución con tiempos competitivos. Coordinamos el transporte sin interrupciones.</p>
+        <div class="svc-tags">
+          <span class="tag tag-g">Nacional</span>
+          <span class="tag tag-g">Entrega directa</span>
+          <span class="tag tag-g">Flota propia</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-slate">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <h3>Soporte Técnico</h3>
+        <p>Lorem ipsum asesores con experiencia en el sector. Le orientamos en la selección del material y las especificaciones.</p>
+        <div class="svc-tags">
+          <span class="tag">Asesoría</span>
+          <span class="tag">Ingeniería</span>
+          <span class="tag">Especificaciones</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header">
+      <div>
+        <p class="eyebrow">Catálogo</p>
+        <h2 class="heading">Productos para Cada Etapa</h2>
+      </div>
+      <a href="#contact" class="btn-outline rev">Solicitar Cotización</a>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
+            <path d="M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4"/>
+            <line x1="12" y1="3" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>Producto 01</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría A</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A47" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M2 12H4M20 12h2M17.66 17.66l1.41 1.41M4.93 4.93l1.41 1.41"/>
+          </svg>
+        </div>
+        <h3>Producto 02</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría A</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3>Producto 03</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría B</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="3"/>
+            <line x1="12" y1="2" x2="12" y2="6"/>
+            <line x1="12" y1="18" x2="12" y2="22"/>
+          </svg>
+        </div>
+        <h3>Producto 04</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría C</span>
+      </div>
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A47" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h3>Producto 05</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría D</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+          </svg>
+        </div>
+        <h3>Producto 06</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría E</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/>
+            <line x1="10" y1="1" x2="10" y2="4"/>
+            <line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+        </div>
+        <h3>Producto 07</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría F</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A47" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <h3>Producto 08</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría G</span>
+      </div>
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <h3>Producto 09</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría H</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <h3>Producto 10</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría I</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A47" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          </svg>
+        </div>
+        <h3>Producto 11</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría A</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Producto 12</h3>
+        <p>Lorem ipsum descripción de producto.</p>
+        <span class="prod-pill">Categoría J</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY PAV -->
+<section id="why" class="section bg-navy">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80"
+            alt="Proyecto de construcción" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">ISO</p>
+          <p class="wib-l">Productos certificados</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white">La Diferencia de Elegirnos</h2>
+        <p class="sub sub--white">Desde XXXX hemos construido nuestra reputación sobre la base de la confianza, la calidad y el compromiso.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#63B3FF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Empresa Certificada</h4>
+              <p>Lorem ipsum proveedor oficial ante organismos certificadores. Materiales con normas vigentes.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6EE7B7" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Cobertura Amplia</h4>
+              <p>Lorem ipsum distribución en todo el país con red de transporte especializada y tiempos competitivos.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#63B3FF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Catálogo Completo</h4>
+              <p>Lorem ipsum más de 50 productos bajo un solo proveedor. Simplifique su proceso de compra.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-w">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Equipo Técnico Experto</h4>
+              <p>Lorem ipsum asesores especializados. Le acompañamos desde la especificación técnica hasta la entrega.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v" data-count="15" data-prefix="+" data-suffix=""></p>
+        <p class="num-l">Años de trayectoria</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v" data-count="50" data-prefix="+" data-suffix=""></p>
+        <p class="num-l">Líneas de productos</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v" data-count="6" data-prefix="" data-suffix=""></p>
+        <p class="num-l">Organismos certificadores</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v" data-count="10" data-prefix="+" data-suffix=""></p>
+        <p class="num-l">Marcas en catálogo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section id="brands">
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Nuestras Marcas</p>
+      <h2 class="heading heading--white">Trabajamos con los Mejores</h2>
+      <p class="brands-sub">Lorem ipsum alianzas estratégicas con fabricantes que garantizan materiales de la más alta calidad.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen1.jpg" alt="AlcaPlas" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen2.jpg" alt="Çayırova Boru" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen3.jpg" alt="FlowGuard Gold" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen4.png" alt="PTM" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d5">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen5.jpg" alt="Tododren" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen6.png" alt="ADS" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen7.jpg" alt="Futura" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen8.png" alt="TuboJet" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen9.jpg" alt="Amanco Wavin" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d5">
+        <div class="brand-card-inner">
+          <img src="marcas/Imagen10.png" alt="Viking" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Proveedores certificados con presencia nacional</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <p class="eyebrow">Contáctenos</p>
+        <h2 class="heading">Hablemos de su Proyecto</h2>
+        <p class="sub" style="margin-bottom:36px">Nuestros asesores le ayudarán a definir los materiales exactos con la mejor relación costo-calidad.</p>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Teléfono</p>
+            <p class="c-value"><a href="tel:+520000000000">+52 00 0000 0000</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Correo</p>
+            <p class="c-value"><a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Ubicación</p>
+            <p class="c-value">Ciudad Ejemplo, País</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0052CC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Horario de atención</p>
+            <p class="c-value">Lunes a Viernes: 8:00 – 18:00<br>Sábado: 9:00 – 14:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar Cotización</h3>
+          <p class="form-sub">Le respondemos en menos de 24 horas hábiles.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Su nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="fe">Empresa</label>
+                <input class="fi" type="text" id="fe" name="empresa" placeholder="Nombre de la empresa" autocomplete="organization">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="ft">Teléfono *</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="+52 55 0000 0000" required autocomplete="tel">
+              </div>
+              <div class="fg">
+                <label class="fl" for="fem">Correo electrónico</label>
+                <input class="fi" type="email" id="fem" name="email" placeholder="correo@empresa.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fs">Tipo de proyecto *</label>
+              <select class="fi" id="fs" name="tipo" required>
+                <option value="">Seleccione el tipo de proyecto</option>
+                <option value="Infraestructura hidráulica">Infraestructura hidráulica</option>
+                <option value="Edificación y construcción civil">Edificación y construcción civil</option>
+                <option value="Obra pública municipal">Obra pública municipal</option>
+                <option value="Proyecto industrial">Proyecto industrial</option>
+                <option value="Agua potable y saneamiento">Agua potable y saneamiento</option>
+                <option value="Protección contra incendios">Protección contra incendios</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Descripción del proyecto *</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="4" placeholder="Describa su proyecto y los materiales que requiere..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <div class="logo-drops" aria-hidden="true">
+            <span class="d-b"></span>
+            <span class="d-g"></span>
+            <span class="d-s"></span>
+          </div>
+          <div class="logo-word">PAV <em>SUMINISTROS</em></div>
+        </div>
+        <p class="foot-desc">Lorem ipsum empresa líder en suministro de materiales para infraestructura y construcción. Fundada en XXXX.</p>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Suministro de Materiales</a></li>
+          <li><a href="#services">Logística y Distribución</a></li>
+          <li><a href="#services">Soporte Técnico</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Productos</p>
+        <ul class="foot-links">
+          <li><a href="#products">Tuberías y Conexiones</a></li>
+          <li><a href="#products">Válvulas Hidráulicas</a></li>
+          <li><a href="#products">Bombas y Equipos</a></li>
+          <li><a href="#products">Ver catálogo completo</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="tel:+520000000000">+52 00 0000 0000</a></li>
+          <li><a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></li>
+          <li><a href="#contact">Cotizar Proyecto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>Mi Negocio</span>. Todos los derechos reservados.</p>
+      <p>Ciudad Ejemplo, País</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float">
+  <span class="wa-tip">Escríbenos por WhatsApp</span>
+  <a href="https://wa.me/520000000000"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="wa-btn"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
