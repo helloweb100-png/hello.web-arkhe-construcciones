@@ -378,7 +378,7 @@
         for (let j = i + 1; j < parts.length; j++) {
           const q = parts[j], dx = p.x - q.x, dy = p.y - q.y, d2 = dx * dx + dy * dy;
           if (d2 < LINK * LINK) {
-            ctx.strokeStyle = 'rgba(42,80,138,' + ((1 - Math.sqrt(d2) / LINK) * 0.2).toFixed(3) + ')';
+            ctx.strokeStyle = 'rgba(184,115,51,' + ((1 - Math.sqrt(d2) / LINK) * 0.2).toFixed(3) + ')';
             ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
           }
@@ -386,16 +386,16 @@
         if (mouse.on) {
           const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
           if (d2 < PTR * PTR) {
-            ctx.strokeStyle = 'rgba(63,115,198,' + ((1 - Math.sqrt(d2) / PTR) * 0.5).toFixed(3) + ')';
+            ctx.strokeStyle = 'rgba(207,135,73,' + ((1 - Math.sqrt(d2) / PTR) * 0.5).toFixed(3) + ')';
             ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
           }
         }
         if (p.cross) {
           const a = p.s + 2.5;
-          ctx.strokeStyle = 'rgba(12,14,17,0.38)'; ctx.lineWidth = 1;
+          ctx.strokeStyle = 'rgba(58,58,58,0.38)'; ctx.lineWidth = 1;
           ctx.beginPath(); ctx.moveTo(p.x - a, p.y); ctx.lineTo(p.x + a, p.y); ctx.moveTo(p.x, p.y - a); ctx.lineTo(p.x, p.y + a); ctx.stroke();
         } else {
-          ctx.fillStyle = 'rgba(42,80,138,0.55)';
+          ctx.fillStyle = 'rgba(184,115,51,0.55)';
           ctx.beginPath(); ctx.arc(p.x, p.y, p.s * 0.75, 0, 6.2832); ctx.fill();
         }
       }
